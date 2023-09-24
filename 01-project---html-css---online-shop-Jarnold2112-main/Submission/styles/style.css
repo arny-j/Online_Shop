@@ -1,0 +1,115 @@
+/* Universal */
+ body {
+    background-color: var(--highlihter-green);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+:root {
+    --dark-green: #3f6660;
+    --highlihter-green: #8bdf83;
+    --dark-white: #fefffe;
+    --border-radius: 1rem;
+}
+
+/* Header */
+.logo {
+    width: 100%;
+    height: auto;
+    max-width: 10rem;
+    border-radius: 1rem;
+}
+.header {
+    display: grid;
+    justify-content: center;
+}
+.nav {
+    display: grid;
+    gap: 1rem;
+}
+.navItem {
+    background-color: #3f6660;
+    color: #fefffe;
+    text-align: center;
+    padding: 1rem;
+    margin: 0 1rem;
+    border-radius: 1rem;
+    font-size: 1.1rem;
+}
+.navItem:hover {
+    text-decoration: underline;
+}
+.navLink {
+    text-decoration: none;
+}
+
+/* Main */
+.content {
+    display: block;
+}
+.product {
+    display: grid;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 1rem;
+    max-width: 20rem;
+    min-width: 15rem;
+}
+.productLink {
+    background-color: #3f6660;
+    border-radius: 1rem;
+    color: #fefffe;
+    font-size: 1.25rem;
+    text-decoration: none;
+    cursor: pointer;
+    
+}
+.productLink:hover {
+    text-decoration: underline;
+}
+.productImg {
+    max-width: 18rem;
+    width: 90%;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+.productContent {
+    text-align: center;
+    padding: 0.5rem;
+    min-width: fit-content;
+}
+/* Media Queries */
+@media screen and (min-width: 600px) {
+    .header {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        box-sizing: border-box;
+        background-color: #3f6660;
+        border-radius: 1rem;
+        justify-content: center;
+        gap: 3rem;
+    }
+    .content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        max-width: 50rem;
+        margin: 0 auto;
+    }
+    .nav {
+        display: grid;
+        padding: 1rem;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+    }
+    .logo {
+        padding-left: 4rem;
+    }
+}
+@media screen and (min-width: 1000px) {
+    .header {
+        max-width: 70rem;
+        margin: 0 auto;
+    }
+    .content {
+        max-width: 70rem;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}

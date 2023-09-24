@@ -1,0 +1,173 @@
+/* Universal */
+body {
+    background-color: var(--highlihter-green);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+:root {
+    --dark-green: #3f6660;
+    --highlihter-green: #8bdf83;
+    --dark-white: #fefffe;
+    --border-radius: 1rem;
+}
+/* Header */
+.logo {
+    width: 100%;
+    height: auto;
+    max-width: 10rem;
+    border-radius: 1rem;
+}
+.header {
+    display: grid;
+    justify-content: center;
+}
+.nav {
+    display: grid;
+    gap: 1rem;
+}
+.navItem {
+    background-color: #3f6660;
+    color: #fefffe;
+    text-align: center;
+    padding: 1rem;
+    margin: 0 1rem;
+    border-radius: 1rem;
+    font-size: 1.1rem;
+}
+.navLink {
+    text-decoration: none;
+}
+.navItem:hover {
+    text-decoration: underline;
+}
+
+/* Main */
+.productContent {
+    text-align: center;
+    padding: 0.5rem;
+    color: #fefffe;
+    background-color: #3f6660;
+    min-width: 1rem;
+    max-width: 10rem;
+    margin: 1.5rem auto;
+    border-radius: 1rem;
+}
+.form {
+    margin: 0 auto;
+    max-width: 25rem;
+    width: 100%;
+    justify-content: center;
+
+}
+.input {
+    display: inline-grid;
+    padding: 0.5rem;
+    max-width: 25rem;
+    width: 95%;
+}
+.formContainer {
+    background-color: #3f6660;
+    color: #fefffe;
+    font: inherit;
+    max-width: 26rem;
+    margin: 1rem auto;
+    border-radius: 1rem;
+}
+
+.inputBox {
+    max-width: 95%;
+    height: 1.5rem;
+    padding: 0.2rem;
+    margin-bottom: 0.5rem;
+    font: inherit;
+    border-radius: 0.5rem;
+}
+.messageBox {
+    max-width: 95%;
+    resize: none;
+    min-height: 5rem;
+    max-height: 10rem;
+    padding: 0.2rem;
+    font: inherit;
+    border-radius: 0.5rem;
+}
+.contactButton {
+    min-width: 6rem;
+    max-width: 20rem;
+    box-sizing: border-box;
+    margin: 1rem auto;
+    padding: 1rem;
+    font-size: larger;
+    border-radius: 0.5rem;
+}
+.contactButton:hover {
+    text-decoration: underline;
+}
+.contactInfo {
+    color: #fefffe;
+    background-color: #3f6660;
+    text-align: center;
+    margin: 0 auto;
+    padding: 1rem;
+    min-width: 5rem;
+    max-width: 24rem;
+    border-radius: 1rem;
+}
+.contactLabel {
+    font-size: 1.2rem;
+}
+.contactLink {
+    color: #fefffe;
+    text-decoration: none;
+}
+.contactLink:hover {
+    text-decoration: underline;
+}
+/* Media Queries */
+@media screen and (min-width: 600px) {
+    .header {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        box-sizing: border-box;
+        background-color: #3f6660;
+        border-radius: 1rem;
+        justify-content: center;
+        gap: 3rem;
+    }
+    .nav {
+        display: grid;
+        padding: 1rem;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+    }
+    .logo {
+        padding-left: 4rem;
+    }
+    .contactContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 50rem;
+    margin: 1rem auto;
+   }
+   .formContainer {
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+   }
+   .contactInfo {
+    width: 90%;
+    height: auto;
+   }
+}
+@media screen and (min-width: 1000px) {
+    .header {
+        max-width: 70rem;
+        margin: 0 auto;
+    }
+    .content {
+        max-width: 70rem;
+        grid-template-columns: 1fr 1fr;
+        margin: 0 auto;
+    }
+}
+   
+
